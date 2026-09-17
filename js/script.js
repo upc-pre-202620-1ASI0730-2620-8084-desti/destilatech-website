@@ -42,4 +42,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+    const tabButtons = document.querySelectorAll('.tabs__btn');
+  const tabPanels = document.querySelectorAll('.tabs__panel');
+
+  tabButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+
+      tabButtons.forEach((b) => {
+        b.classList.toggle('is-active', b === btn);
+        b.setAttribute('aria-selected', String(b === btn));
+      });
+
+      tabPanels.forEach((panel) => {
+        const isTarget = panel.dataset.panel === target;
+        panel.classList.toggle('is-active', isTarget);
+        panel.hidden = !isTarget;
+      });
+    });
+  });
 });

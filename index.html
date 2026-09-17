@@ -197,3 +197,75 @@
   color: #fff;
 }
 .lang-switch__btn:not(.is-active):hover { color: var(--color-primary); }
+
+  <section class="section features" id="funcionalidades">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow" data-i18n="features.eyebrow">Funcionalidades de la plataforma</span>
+        <h2 data-i18n="features.title">Una plataforma, dos formas de trabajar</h2>
+        <p class="section__lead" data-i18n="features.lead">Elige tu perfil para ver las funcionalidades pensadas para ti.</p>
+      </div>
+
+      <div class="tabs" id="tabs">
+        <div class="tabs__buttons" role="tablist" data-i18n-attrs='{"aria-label":"features.tablistLabel"}' aria-label="Funcionalidades por perfil">
+          <button class="tabs__btn is-active" role="tab" aria-selected="true" aria-controls="panel-productor" id="tab-productor" data-tab="productor" data-i18n="features.tabProductor">
+            Productor
+          </button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-comercializador" id="tab-comercializador" data-tab="comercializador" data-i18n="features.tabComercializador">
+            Comercializador
+          </button>
+        </div>
+
+        <div class="tabs__panel is-active" id="panel-productor" role="tabpanel" aria-labelledby="tab-productor" data-panel="productor">
+          <div class="feature-grid">
+            <div class="feature-item">
+              <h3 data-i18n="features.prod1.title">Monitoreo IoT de producción</h3>
+              <p data-i18n="features.prod1.desc">Sensores simulados registran temperatura, humedad y otras variables clave del proceso de destilación en tiempo real.</p>
+            </div>
+            <div class="feature-item">
+              <h3 data-i18n="features.prod2.title">Trazabilidad de lotes</h3>
+              <p data-i18n="features.prod2.desc">Sigue cada lote desde la materia prima hasta el embotellado, con historial completo y exportable.</p>
+            </div>
+            <div class="feature-item">
+              <h3 data-i18n="features.prod3.title">Detección de condiciones anómalas</h3>
+              <p data-i18n="features.prod3.desc">Recibe alertas automáticas cuando una variable de producción se sale del rango esperado.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="panel-comercializador" role="tabpanel" aria-labelledby="tab-comercializador" data-panel="comercializador" hidden>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <h3 data-i18n="features.com1.title">Inventario simple desde el celular</h3>
+              <p data-i18n="features.com1.desc">Registra entradas y salidas de productos en segundos, sin curva de aprendizaje ni planillas complicadas.</p>
+            </div>
+            <div class="feature-item">
+              <h3 data-i18n="features.com2.title">Gestión de pedidos</h3>
+              <p data-i18n="features.com2.desc">Organiza pedidos a proveedores y da seguimiento a su estado desde un solo panel.</p>
+            </div>
+            <div class="feature-item">
+              <h3 data-i18n="features.com3.title">Alertas de stock</h3>
+              <p data-i18n="features.com3.desc">Recibe avisos antes de quedarte sin un producto, para no perder ventas por desabastecimiento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="section cta-final">
+    <div class="container cta-final__inner">
+      <h2 data-i18n="ctaFinal.title">Empieza a gestionar tu producción e inventario hoy</h2>
+      <p data-i18n="ctaFinal.desc">Prueba Destilatech gratis durante 14 días. No necesitas tarjeta de crédito.</p>
+      <a href="/registro" class="btn btn--primary btn--lg" data-cta="cta-final" data-i18n="cta.trial">Prueba gratis 14 días</a>
+    </div>
+  </section>
+
+</main>
+<!-- [BRANCH: feature/i18n] -->
+<script src="js/i18n.js"></script>
+<!-- [BRANCH: feature/landing-structure] menu + smooth scroll + year — [BRANCH: feature/platform-features-tabs] tabs logic also lives in this file -->
+<script src="js/script.js"></script>
+</body>
+</html>
