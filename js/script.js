@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.getElementById('hamburger');
   const nav = document.getElementById('nav');
@@ -28,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // [BRANCH: feature/landing-structure] anchor smooth scroll for the header/footer nav links
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (event) => {
       const targetId = link.getAttribute('href');
@@ -40,9 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-    const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
-    const tabButtons = document.querySelectorAll('.tabs__btn');
+  const tabButtons = document.querySelectorAll('.tabs__btn');
   const tabPanels = document.querySelectorAll('.tabs__panel');
 
   tabButtons.forEach((btn) => {
@@ -61,4 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });

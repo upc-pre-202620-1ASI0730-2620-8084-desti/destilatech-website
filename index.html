@@ -3,10 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Destilatech — Gestión inteligente para el ecosistema del pisco</title>
+<meta name="description" data-i18n-attrs='{"content":"meta.description"}' content="Destilatech centraliza el monitoreo de producción, la gestión de inventario y las operaciones comerciales del ecosistema peruano del pisco, con análisis predictivo de reposición.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
 
 <header class="header" id="header">
   <div class="container header__inner">
-
     <a href="#header" class="logo" data-i18n-attrs='{"aria-label":"logo.ariaLabel"}' aria-label="Destilatech - inicio">
       <span class="logo__icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +36,90 @@
         <li><a href="#funcionalidades" class="nav__link" data-i18n="nav.features">Funcionalidades</a></li>
       </ul>
 
-       <section class="section goals" id="objetivos">
+      <div class="lang-switch" role="group" data-i18n-attrs='{"aria-label":"lang.switchLabel"}' aria-label="Selector de idioma">
+        <button type="button" class="lang-switch__btn is-active" data-lang="es">ES</button>
+        <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+      </div>
+
+      <a href="/registro" class="btn btn--primary nav__cta" data-cta="header" data-i18n="cta.trial">Prueba gratis 14 días</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" data-i18n-attrs='{"aria-label":"nav.toggleLabel"}' aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="section hero" id="descripcion">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow" data-i18n="hero.eyebrow">Plataforma SaaS para el ecosistema del pisco</span>
+        <h1 data-i18n="hero.title">Monitorea, controla y anticipa tu producción y tu inventario de pisco desde un solo lugar</h1>
+        <p class="hero__lead" data-i18n="hero.lead">
+          Destilatech centraliza el monitoreo de producción, la trazabilidad de lotes, la gestión de inventario
+          y las operaciones comerciales del ecosistema peruano del pisco, con análisis predictivo que te ayuda
+          a decidir cuándo reponer antes de quedarte sin stock.
+        </p>
+        <div class="hero__actions">
+          <a href="/registro" class="btn btn--primary btn--lg" data-cta="hero" data-i18n="cta.trial">Prueba gratis 14 días</a>
+          <a href="#funcionalidades" class="btn btn--ghost btn--lg" data-i18n="hero.ctaSecondary">Ver funcionalidades</a>
+        </div>
+        <p class="hero__note" data-i18n="hero.note">Sin tarjeta de crédito para empezar. Cancela cuando quieras.</p>
+      </div>
+       <div class="hero__visual">
+        <img class="hero__photo" src="assets/img/hero-alambiques-v2.jpg" data-i18n-attrs='{"alt":"hero.photoAlt"}' alt="Alambiques de cobre en una destilería de pisco" width="1600" height="1066" loading="eager">
+        <div class="hero__card hero__card--1" aria-hidden="true">
+          <span class="hero__card-label" data-i18n="hero.card1.label">Tanque A · Fermentación</span>
+          <span class="hero__card-value">18.4°C</span>
+          <span class="hero__card-status hero__card-status--ok" data-i18n="hero.card1.status">Óptimo</span>
+        </div>
+        <div class="hero__card hero__card--2" aria-hidden="true">
+          <span class="hero__card-label" data-i18n="hero.card2.label">Inventario · Pisco Quebranta</span>
+          <span class="hero__card-value" data-i18n="hero.card2.value">42 uds.</span>
+          <span class="hero__card-status hero__card-status--warn" data-i18n="hero.card2.status">Reponer pronto</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="segments container" id="segmentos">
+      <div class="segment-card">
+        <div class="segment-card__media">
+          <img src="assets/img/segmento-productor-v2.jpg" data-i18n-attrs='{"alt":"segProd.imgAlt"}' alt="Alambique de cobre usado en la producción artesanal de pisco" width="900" height="600" loading="lazy" style="object-position: 15% 50%;">
+        </div>
+        <span class="segment-card__tag" data-i18n="segProd.tag">Productor de pisco</span>
+        <h2 data-i18n="segProd.title">Para bodegas productoras</h2>
+        <p data-i18n="segProd.desc">
+          Supervisa condiciones de elaboración en tiempo real, mantén trazabilidad completa de cada lote
+          y controla tu inventario de insumos y producto terminado sin depender de cuadernos ni hojas sueltas.
+        </p>
+        <ul class="segment-card__list">
+          <li data-i18n="segProd.li1">Monitoreo de variables de producción (IoT)</li>
+          <li data-i18n="segProd.li2">Trazabilidad de lotes de principio a fin</li>
+          <li data-i18n="segProd.li3">Control de inventario de insumos y stock</li>
+        </ul>
+      </div>
+      <div class="segment-card segment-card--alt">
+        <div class="segment-card__media">
+          <img src="assets/img/segmento-comercializador.jpg" data-i18n-attrs='{"alt":"segCom.imgAlt"}' alt="Estante de licorería con botellas de licor exhibidas" width="900" height="600" loading="lazy">
+        </div>
+        <span class="segment-card__tag" data-i18n="segCom.tag">Comercializador</span>
+        <h2 data-i18n="segCom.title">Para licorerías y distribuidores</h2>
+        <p data-i18n="segCom.desc">
+          Reemplaza el cuaderno o el Excel por un control de inventario simple desde el celular, con alertas
+          antes de que un producto se agote y una gestión de pedidos más ágil.
+        </p>
+        <ul class="segment-card__list">
+          <li data-i18n="segCom.li1">Inventario simple, pensado para el celular</li>
+          <li data-i18n="segCom.li2">Alertas automáticas de reposición</li>
+          <li data-i18n="segCom.li3">Gestión de pedidos a proveedores</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+   <section class="section goals" id="objetivos">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow" data-i18n="goals.eyebrow">Objetivos de la plataforma</span>
@@ -73,8 +163,7 @@
     </div>
   </section>
 
- 
-  <section class="section pricing" id="precios">
+   <section class="section pricing" id="precios">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow" data-i18n="pricing.eyebrow">Planes de suscripción</span>
@@ -85,7 +174,46 @@
       <div class="pricing__grid">
         <article class="price-card">
           <h3 data-i18n="pricing.basic.title">Plan Básico</h3>
-           <section class="section impact impact--photo" id="impacto">
+          <p class="price-card__price" data-i18n="pricing.basic.price">S/ 60<span>/mes</span></p>
+          <p class="price-card__desc" data-i18n="pricing.basic.desc">Ideal para bodegas o licorerías pequeñas que recién digitalizan su inventario.</p>
+          <ul class="price-card__list">
+            <li data-i18n="pricing.basic.li1">Inventario básico</li>
+            <li data-i18n="pricing.basic.li2">Alertas de stock</li>
+            <li data-i18n="pricing.basic.li3">1 usuario</li>
+          </ul>
+          <a href="/registro?plan=basico" class="btn btn--outline" data-cta="pricing-basico" data-i18n="cta.trial">Prueba gratis 14 días</a>
+        </article>
+
+        <article class="price-card price-card--featured">
+          <span class="price-card__badge" data-i18n="pricing.pro.badge">Más elegido</span>
+          <h3 data-i18n="pricing.pro.title">Plan Profesional</h3>
+          <p class="price-card__price" data-i18n="pricing.pro.price">S/ 110<span>/mes</span></p>
+          <p class="price-card__desc" data-i18n="pricing.pro.desc">Para productores y comercializadores en crecimiento con varios lotes o puntos de venta.</p>
+          <ul class="price-card__list">
+            <li data-i18n="pricing.pro.li1">Monitoreo de producción (IoT)</li>
+            <li data-i18n="pricing.pro.li2">Trazabilidad de lotes</li>
+            <li data-i18n="pricing.pro.li3">Estimaciones predictivas</li>
+            <li data-i18n="pricing.pro.li4">Hasta 5 usuarios</li>
+          </ul>
+          <a href="/registro?plan=profesional" class="btn btn--primary" data-cta="pricing-profesional" data-i18n="cta.trial">Prueba gratis 14 días</a>
+        </article>
+
+        <article class="price-card">
+          <h3 data-i18n="pricing.ent.title">Plan Empresarial</h3>
+          <p class="price-card__price" data-i18n="pricing.ent.price">S/ 200<span>/mes</span></p>
+          <p class="price-card__desc" data-i18n="pricing.ent.desc">Para operaciones múltiples que requieren soporte prioritario e integración avanzada.</p>
+          <ul class="price-card__list">
+            <li data-i18n="pricing.ent.li1">Todo lo del plan Profesional</li>
+            <li data-i18n="pricing.ent.li2">Usuarios ilimitados</li>
+            <li data-i18n="pricing.ent.li3">Soporte prioritario</li>
+          </ul>
+          <a href="/registro?plan=empresarial" class="btn btn--outline" data-cta="pricing-empresarial" data-i18n="cta.trial">Prueba gratis 14 días</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section impact impact--photo" id="impacto">
     <div class="container">
       <div class="section__head section__head--light">
         <span class="eyebrow eyebrow--light" data-i18n="impact.eyebrow">Impacto en el sector</span>
@@ -106,97 +234,6 @@
       <p class="impact__source" data-i18n="impact.source">Fuente: Ministerio de la Producción, 2025.</p>
     </div>
   </section>
-
-  <footer class="footer" id="contacto">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-
-    <button class="hamburger" id="hamburger" data-i18n-attrs='{"aria-label":"nav.toggleLabel"}' aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<main>
-
-
-  <section class="section hero" id="descripcion">
-    <div class="container hero__inner">
-      <div class="hero__content">
-        <span class="eyebrow" data-i18n="hero.eyebrow">Plataforma SaaS para el ecosistema del pisco</span>
-        <h1 data-i18n="hero.title">Monitorea, controla y anticipa tu producción y tu inventario de pisco desde un solo lugar</h1>
-        <p class="hero__lead" data-i18n="hero.lead">
-          Destilatech centraliza el monitoreo de producción, la trazabilidad de lotes, la gestión de inventario
-          y las operaciones comerciales del ecosistema peruano del pisco, con análisis predictivo que te ayuda
-          a decidir cuándo reponer antes de quedarte sin stock.
-        </p>
-        <div class="hero__actions">
-          <a href="/registro" class="btn btn--primary btn--lg" data-cta="hero" data-i18n="cta.trial">Prueba gratis 14 días</a>
-          <a href="#funcionalidades" class="btn btn--ghost btn--lg" data-i18n="hero.ctaSecondary">Ver funcionalidades</a>
-        </div>
-        <p class="hero__note" data-i18n="hero.note">Sin tarjeta de crédito para empezar. Cancela cuando quieras.</p>
-      </div>
-
-      .logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 1.15rem;
-  color: var(--color-primary-dark);
-}
-.logo__icon { color: var(--color-primary); display: inline-flex; }
-.logo__text strong { font-weight: 800; }
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav__list {
-  display: flex;
-  gap: 24px;
-}
-
-.nav__link {
-  font-weight: 500;
-  font-size: 0.95rem;
-  color: var(--color-text);
-  padding: 8px 0;
-  border-bottom: 2px solid transparent;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-.nav__link:hover { color: var(--color-primary); border-color: var(--color-accent); }
-
-/* [BRANCH: feature/i18n] ES/EN switch */
-.lang-switch {
-  display: flex;
-  gap: 2px;
-  background: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  padding: 3px;
-}
-.lang-switch__btn {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 0.78rem;
-  letter-spacing: 0.02em;
-  color: var(--color-text-muted);
-  padding: 5px 11px;
-  border-radius: 999px;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-.lang-switch__btn.is-active {
-  background: var(--color-primary);
-  color: #fff;
-}
-.lang-switch__btn:not(.is-active):hover { color: var(--color-primary); }
 
   <section class="section features" id="funcionalidades">
     <div class="container">
@@ -253,7 +290,6 @@
     </div>
   </section>
 
-  <!-- ===== FINAL CTA ===== -->
   <section class="section cta-final">
     <div class="container cta-final__inner">
       <h2 data-i18n="ctaFinal.title">Empieza a gestionar tu producción e inventario hoy</h2>
@@ -263,9 +299,65 @@
   </section>
 
 </main>
-<!-- [BRANCH: feature/i18n] -->
+
+<footer class="footer" id="contacto">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#header" class="logo logo--footer" data-i18n-attrs='{"aria-label":"logo.ariaLabel"}' aria-label="Destilatech - inicio">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 3.2h15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M4.5 3.2c0 5.4 3.3 9.7 7.5 9.7s7.5-4.3 7.5-9.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 12.9v6.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M8.3 20.5h7.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="16.3" cy="4.6" r="1.15" style="fill: var(--color-accent)"/>
+          </svg>
+        </span>
+        <span class="logo__text">Destila<strong>tech</strong></span>
+      </a>
+      <p data-i18n="footer.brandDesc">Gestión inteligente para el ecosistema peruano del pisco. Un proyecto de FuturosSeniors.</p>
+    </div>
+
+    <div class="footer__col">
+      <h3 data-i18n="footer.navTitle">Navegación</h3>
+      <ul>
+        <li><a href="#descripcion" data-i18n="nav.description">Descripción</a></li>
+        <li><a href="#objetivos" data-i18n="nav.goals">Objetivos</a></li>
+        <li><a href="#precios" data-i18n="nav.pricing">Precios</a></li>
+        <li><a href="#impacto" data-i18n="nav.impact">Impacto</a></li>
+        <li><a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 data-i18n="footer.legalTitle">Legal</h3>
+      <ul>
+        <li><a href="/terminos" data-i18n="footer.termsLink">Términos y condiciones</a></li>
+        <li><a href="/privacidad" data-i18n="footer.privacyLink">Política de privacidad</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 data-i18n="footer.contactTitle">Contacto</h3>
+      <ul>
+        <li><a href="mailto:contacto@destilatech.pe">contacto@destilatech.pe</a></li>
+        <li><a href="tel:+51999999999">+51 999 999 999</a></li>
+      </ul>
+      <div class="footer__social">
+        <a href="#" data-i18n-attrs='{"aria-label":"footer.social.facebook"}' aria-label="Facebook de Destilatech">FB</a>
+        <a href="#" data-i18n-attrs='{"aria-label":"footer.social.instagram"}' aria-label="Instagram de Destilatech">IG</a>
+        <a href="#" data-i18n-attrs='{"aria-label":"footer.social.linkedin"}' aria-label="LinkedIn de Destilatech">IN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <p>&copy; <span id="year"></span> <span data-i18n="footer.copyright">Destilatech · FuturosSeniors. Todos los derechos reservados.</span></p>
+    <a href="/registro" class="btn btn--primary btn--sm" data-cta="footer" data-i18n="cta.trial">Prueba gratis 14 días</a>
+  </div>
+</footer>
+
 <script src="js/i18n.js"></script>
-<!-- [BRANCH: feature/landing-structure] menu + smooth scroll + year — [BRANCH: feature/platform-features-tabs] tabs logic also lives in this file -->
 <script src="js/script.js"></script>
 </body>
 </html>
