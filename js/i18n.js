@@ -10,6 +10,7 @@ const translations = {
         "nav.pricing": "Precios",
         "nav.impact": "Impacto",
         "nav.features": "Funcionalidades",
+        "nav.testimonials": "Testimonios",
         "nav.about": "Nosotros",
         "cta.subscribe": "Suscríbete",
         "lang.switchLabel": "Selector de idioma",
@@ -103,9 +104,21 @@ const translations = {
         "features.com3.title": "Alertas de stock",
         "features.com3.desc": "Recibe avisos antes de quedarte sin un producto, para no perder ventas por desabastecimiento.",
 
+        "testimonials.eyebrow": "Testimonios",
+        "testimonials.title": "Lo que dicen quienes ya usan Destilatech",
+        "testimonials.lead": "Productores y comercializadores que dejaron atrás el cuaderno y el Excel.",
+        "testimonials.ratingLabel": "Calificación: 5 de 5",
+        "testimonials.t1.quote": "Antes revisaba la temperatura de los tanques a mano dos veces al día. Ahora recibo una alerta apenas algo sale de rango y tengo la trazabilidad de cada lote lista para mostrar.",
+        "testimonials.t1.role": "Productora · Bodega artesanal en Ica",
+        "testimonials.t2.quote": "Me quedaba sin Quebranta justo los fines de semana. Con las alertas de stock bajo hago mi pedido a tiempo y ya no pierdo ventas.",
+        "testimonials.t2.role": "Comercializador · Licorería en Lima",
+        "testimonials.t3.quote": "Registrar pedidos y ver el inventario desde el celular nos ahorra horas cada semana. Las estimaciones de reposición nos ayudan a planificar las compras.",
+        "testimonials.t3.role": "Distribuidora · Arequipa",
+        "testimonials.note": "Testimonios ilustrativos, basados en las necesidades identificadas en nuestras entrevistas a productores y comercializadores.",
+
         "about.eyebrow": "Acerca de nosotros",
         "about.title": "Somos FuturosSeniors",
-        "about.lead": "Un equipo de cinco estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Creamos Destilatech para centralizar la información de producción, inventario y comercialización del pisco, y facilitar la supervisión y la toma de decisiones de productores y comercializadores.",
+        "about.lead": "Un equipo de cuatro estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Creamos Destilatech para centralizar la información de producción, inventario y comercialización del pisco, y facilitar la supervisión y la toma de decisiones de productores y comercializadores.",
         "about.role": "Ingeniería de Software · UPC",
         "about.photoAlt": "Foto de",
         "about.videoTitle": "Conoce al equipo",
@@ -137,6 +150,7 @@ const translations = {
         "nav.pricing": "Pricing",
         "nav.impact": "Impact",
         "nav.features": "Features",
+        "nav.testimonials": "Testimonials",
         "nav.about": "About us",
         "cta.subscribe": "Subscribe",
         "lang.switchLabel": "Language selector",
@@ -230,9 +244,21 @@ const translations = {
         "features.com3.title": "Stock alerts",
         "features.com3.desc": "Get notified before a product runs out, so you don't lose sales to stockouts.",
 
+        "testimonials.eyebrow": "Testimonials",
+        "testimonials.title": "What our customers say",
+        "testimonials.lead": "Producers and retailers who left the notebook and the spreadsheet behind.",
+        "testimonials.ratingLabel": "Rating: 5 out of 5",
+        "testimonials.t1.quote": "I used to check the tank temperature by hand twice a day. Now I get an alert as soon as something goes out of range, and every batch is fully traceable.",
+        "testimonials.t1.role": "Producer · Artisanal winery in Ica",
+        "testimonials.t2.quote": "I always ran out of Quebranta right on weekends. With low-stock alerts I place my order on time and no longer lose sales.",
+        "testimonials.t2.role": "Retailer · Liquor store in Lima",
+        "testimonials.t3.quote": "Logging orders and checking inventory from the phone saves us hours every week. The restock estimates help us plan our purchases.",
+        "testimonials.t3.role": "Distributor · Arequipa",
+        "testimonials.note": "Illustrative testimonials based on the needs identified in our interviews with producers and retailers.",
+
         "about.eyebrow": "About us",
         "about.title": "We are FuturosSeniors",
-        "about.lead": "A team of five Software Engineering students at Universidad Peruana de Ciencias Aplicadas (UPC). We built Destilatech to centralize pisco production, inventory and sales information, making supervision and decision-making easier for producers and retailers.",
+        "about.lead": "A team of four Software Engineering students at Universidad Peruana de Ciencias Aplicadas (UPC). We built Destilatech to centralize pisco production, inventory and sales information, making supervision and decision-making easier for producers and retailers.",
         "about.role": "Software Engineering · UPC",
         "about.photoAlt": "Photo of",
         "about.videoTitle": "Meet the team",
@@ -278,7 +304,6 @@ function applyLanguage(lang) {
         if (dict[key] !== undefined) el.innerHTML = dict[key];
     });
 
-
     document.querySelectorAll("[data-i18n-attrs]").forEach((el) => {
         let map;
         try {
@@ -290,7 +315,6 @@ function applyLanguage(lang) {
             if (dict[key] !== undefined) el.setAttribute(attr, dict[key]);
         });
     });
-
 
     document.querySelectorAll(".lang-switch__btn").forEach((btn) => {
         btn.classList.toggle("is-active", btn.dataset.lang === lang);
@@ -309,6 +333,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".lang-switch__btn").forEach((btn) => {
         btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
     });
-
-
 });

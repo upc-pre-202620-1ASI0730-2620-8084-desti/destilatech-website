@@ -60,16 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Team photos: while a photo is missing, the card shows the member's initials.
   document.querySelectorAll('.team-card__photo img').forEach((img) => {
     const showInitials = () => img.parentElement.classList.add('is-empty');
     if (img.complete && img.naturalWidth === 0) showInitials();
     img.addEventListener('error', showInitials);
   });
 
+  // Team video: embeds the YouTube video once its ID is set in data-video-id.
   const videoFrame = document.getElementById('team-video');
   const videoId = videoFrame ? videoFrame.dataset.videoId.trim() : '';
-
-
   if (videoId) {
     const iframe = document.createElement('iframe');
     iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}`;
