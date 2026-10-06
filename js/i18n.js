@@ -265,5 +265,18 @@ function getStoredLang() {
     return null;
 }
 
+const DEFAULT_LANG = "en";
+
+function applyLanguage(lang) {
+    if (!SUPPORTED_LANGS.includes(lang)) lang = DEFAULT_LANG;
+    const dict = translations[lang];
+
+    document.documentElement.setAttribute("lang", lang);
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+
 
 });
