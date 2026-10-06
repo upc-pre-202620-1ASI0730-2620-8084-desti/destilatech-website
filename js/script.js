@@ -70,6 +70,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const videoId = videoFrame ? videoFrame.dataset.videoId.trim() : '';
 
 
+  if (videoId) {
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}`;
+    iframe.title = 'Destilatech - FuturosSeniors';
+    iframe.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.loading = 'lazy';
+    videoFrame.replaceChildren(iframe);
+  }
 
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
