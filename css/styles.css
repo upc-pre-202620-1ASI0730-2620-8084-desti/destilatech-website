@@ -654,3 +654,40 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
   .nav__list { gap: 16px; }
   .nav__link { font-size: 0.9rem; }
 }
+
+
+@media (max-width: 1023.98px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px 20px 20px;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .nav.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .nav__list { flex-direction: column; gap: 4px; margin-bottom: 16px; }
+  .nav__link { display: block; padding: 10px 4px; }
+  .lang-switch { align-self: flex-start; margin-bottom: 16px; }
+  .nav__cta { width: 100%; text-align: center; }
+  .hamburger { display: flex; }
+}
+
+@media (min-width: 1024px) {
+  .hamburger { display: none; }
+}
