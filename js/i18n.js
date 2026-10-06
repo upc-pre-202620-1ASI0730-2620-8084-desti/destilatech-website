@@ -302,6 +302,13 @@ function applyLanguage(lang) {
     } catch (e) {}
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const initialLang = getStoredLang() || DEFAULT_LANG;
+    applyLanguage(initialLang);
+
+    document.querySelectorAll(".lang-switch__btn").forEach((btn) => {
+        btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
+    });
 
 
 });
