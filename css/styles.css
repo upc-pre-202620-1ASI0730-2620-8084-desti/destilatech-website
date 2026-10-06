@@ -648,3 +648,9 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
   .team__grid { grid-template-columns: repeat(5, 1fr); }
   .feature-grid { grid-template-columns: repeat(3, 1fr); }
 }
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .nav { gap: 18px; }
+  .nav__list { gap: 16px; }
+  .nav__link { font-size: 0.9rem; }
+}
