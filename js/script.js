@@ -66,6 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
     img.addEventListener('error', showInitials);
   });
 
+  const videoFrame = document.getElementById('team-video');
+  const videoId = videoFrame ? videoFrame.dataset.videoId.trim() : '';
+
 
 
   const yearEl = document.getElementById('year');
