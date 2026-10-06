@@ -292,5 +292,16 @@ function applyLanguage(lang) {
     });
 
 
+    document.querySelectorAll(".lang-switch__btn").forEach((btn) => {
+        btn.classList.toggle("is-active", btn.dataset.lang === lang);
+        btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
+    });
+
+    try {
+        localStorage.setItem(LANG_STORAGE_KEY, lang);
+    } catch (e) {}
+}
+
+
 
 });
