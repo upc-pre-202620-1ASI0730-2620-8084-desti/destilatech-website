@@ -279,4 +279,18 @@ function applyLanguage(lang) {
     });
 
 
+    document.querySelectorAll("[data-i18n-attrs]").forEach((el) => {
+        let map;
+        try {
+            map = JSON.parse(el.getAttribute("data-i18n-attrs"));
+        } catch (e) {
+            return;
+        }
+        Object.entries(map).forEach(([attr, key]) => {
+            if (dict[key] !== undefined) el.setAttribute(attr, dict[key]);
+        });
+    });
+
+
+
 });
