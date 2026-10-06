@@ -60,6 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.querySelectorAll('.team-card__photo img').forEach((img) => {
+    const showInitials = () => img.parentElement.classList.add('is-empty');
+    if (img.complete && img.naturalWidth === 0) showInitials();
+    img.addEventListener('error', showInitials);
+  });
 
 
 
