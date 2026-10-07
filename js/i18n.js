@@ -132,10 +132,6 @@ const translations = {
         "footer.legalTitle": "Legal",
         "footer.termsLink": "Términos y condiciones",
         "footer.privacyLink": "Política de privacidad",
-        "footer.contactTitle": "Contacto",
-        "footer.social.facebook": "Facebook de Destilatech",
-        "footer.social.instagram": "Instagram de Destilatech",
-        "footer.social.linkedin": "LinkedIn de Destilatech",
         "footer.copyright": "Destilatech · FuturosSeniors. Todos los derechos reservados."
     },
 
@@ -272,10 +268,6 @@ const translations = {
         "footer.legalTitle": "Legal",
         "footer.termsLink": "Terms and conditions",
         "footer.privacyLink": "Privacy policy",
-        "footer.contactTitle": "Contact",
-        "footer.social.facebook": "Destilatech on Facebook",
-        "footer.social.instagram": "Destilatech on Instagram",
-        "footer.social.linkedin": "Destilatech on LinkedIn",
         "footer.copyright": "Destilatech · FuturosSeniors. All rights reserved."
     }
 };
