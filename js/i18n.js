@@ -124,6 +124,12 @@ const translations = {
         "about.videoTitle": "Conoce al equipo",
         "about.videoSoon": "Video de presentación disponible próximamente",
 
+        "productVideo.eyebrow": "Video del producto",
+        "productVideo.title": "Mira Destilatech en acción",
+        "productVideo.lead": "Un recorrido por la plataforma: monitoreo de lotes, inventario, pedidos y alertas de reposición.",
+        "productVideo.soon": "Video del producto disponible próximamente",
+        "nav.productVideo": "Video",
+
         "ctaFinal.title": "Empieza a gestionar tu producción e inventario hoy",
         "ctaFinal.desc": "Suscríbete y toma el control de tu operación desde el primer día.",
 
@@ -259,6 +265,12 @@ const translations = {
         "about.photoAlt": "Photo of",
         "about.videoTitle": "Meet the team",
         "about.videoSoon": "Team video coming soon",
+
+        "productVideo.eyebrow": "Product video",
+        "productVideo.title": "See Destilatech in action",
+        "productVideo.lead": "A walkthrough of the platform: batch monitoring, inventory, orders and restock alerts.",
+        "productVideo.soon": "Product video coming soon",
+        "nav.productVideo": "Video",
 
         "ctaFinal.title": "Start managing your production and inventory today",
         "ctaFinal.desc": "Subscribe and take control of your operation from day one.",

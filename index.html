@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=7">
+  <link rel="stylesheet" href="css/styles.css?v=8">
 </head>
 <body>
 
@@ -278,6 +278,24 @@
     </div>
   </section>
 
+  <section class="section product-video" id="video">
+    <div class="container">
+      <div class="section__head section__head--center section__head--light">
+        <span class="eyebrow eyebrow--light" data-i18n="productVideo.eyebrow">Product video</span>
+        <h2 data-i18n="productVideo.title">See Destilatech in action</h2>
+        <p class="section__lead" data-i18n="productVideo.lead">A walkthrough of the platform: batch monitoring, inventory, orders and restock alerts.</p>
+      </div>
+
+      <!-- Paste the YouTube video ID in data-video-id (e.g. data-video-id="dQw4w9WgXcQ") when the video is recorded -->
+      <div class="video-frame" id="product-video" data-video-id="" data-video-title="Destilatech - Product video">
+        <div class="video-frame__placeholder">
+          <svg viewBox="0 0 24 24" width="44" height="44" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M10 8.5v7l6-3.5-6-3.5Z" fill="currentColor"/></svg>
+          <span data-i18n="productVideo.soon">Product video coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section testimonials" id="testimonios">
     <div class="container">
       <div class="section__head">
@@ -376,7 +394,7 @@
       <div class="about__video">
         <h3 data-i18n="about.videoTitle">Meet the team</h3>
         <!-- Paste the YouTube video ID in data-video-id (e.g. data-video-id="dQw4w9WgXcQ") when the video is recorded -->
-        <div class="video-frame" id="team-video" data-video-id="">
+        <div class="video-frame" id="team-video" data-video-id="" data-video-title="Destilatech - FuturosSeniors team">
           <div class="video-frame__placeholder">
             <svg viewBox="0 0 24 24" width="44" height="44" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M10 8.5v7l6-3.5-6-3.5Z" fill="currentColor"/></svg>
             <span data-i18n="about.videoSoon">Team video coming soon</span>
@@ -423,6 +441,7 @@
         <li><a href="#impacto" data-i18n="nav.impact">Impact</a></li>
         <li><a href="#funcionalidades" data-i18n="nav.features">Features</a></li>
         <li><a href="#testimonios" data-i18n="nav.testimonials">Testimonials</a></li>
+        <li><a href="#video" data-i18n="nav.productVideo">Video</a></li>
         <li><a href="#nosotros" data-i18n="nav.about">About us</a></li>
       </ul>
     </div>
