@@ -67,18 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
     img.addEventListener('error', showInitials);
   });
 
-  // Team video: embeds the YouTube video once its ID is set in data-video-id.
-  const videoFrame = document.getElementById('team-video');
-  const videoId = videoFrame ? videoFrame.dataset.videoId.trim() : '';
-  if (videoId) {
+  // Product and team videos: each one embeds its YouTube video once its ID is set in data-video-id.
+  document.querySelectorAll('.video-frame[data-video-id]').forEach((videoFrame) => {
+    const videoId = videoFrame.dataset.videoId.trim();
+    if (!videoId) return;
     const iframe = document.createElement('iframe');
     iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}`;
-    iframe.title = 'Destilatech - FuturosSeniors';
+    iframe.title = videoFrame.dataset.videoTitle || 'Destilatech';
     iframe.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture';
     iframe.allowFullscreen = true;
     iframe.loading = 'lazy';
     videoFrame.replaceChildren(iframe);
-  }
+  });
 
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
