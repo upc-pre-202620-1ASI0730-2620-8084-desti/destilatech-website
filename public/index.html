@@ -8,54 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=9">
+  <link rel="stylesheet" href="assets/styles/styles.css?v=10">
 </head>
 <body>
 
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="#header" class="logo" data-i18n-attrs='{"aria-label":"logo.ariaLabel"}' aria-label="Destilatech - inicio">
-      <span class="logo__icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.5 3.2h15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          <path d="M4.5 3.2c0 5.4 3.3 9.7 7.5 9.7s7.5-4.3 7.5-9.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M12 12.9v6.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          <path d="M8.3 20.5h7.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          <circle cx="16.3" cy="4.6" r="1.15" style="fill: var(--color-accent)"/>
-        </svg>
-      </span>
-      <span class="logo__text">Destila<strong>tech</strong></span>
-    </a>
-
-    <nav class="nav" id="nav">
-      <ul class="nav__list">
-        <li><a href="#descripcion" class="nav__link" data-i18n="nav.description">Overview</a></li>
-        <li><a href="#objetivos" class="nav__link" data-i18n="nav.goals">Benefits</a></li>
-        <li><a href="#precios" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
-        <li><a href="#impacto" class="nav__link" data-i18n="nav.impact">Impact</a></li>
-        <li><a href="#funcionalidades" class="nav__link" data-i18n="nav.features">Features</a></li>
-        <li><a href="#video" class="nav__link" data-i18n="nav.productVideo">About the product</a></li>
-        <li><a href="#testimonios" class="nav__link" data-i18n="nav.testimonials">Testimonials</a></li>
-        <li><a href="#nosotros" class="nav__link" data-i18n="nav.about">About us</a></li>
-      </ul>
-
-      <div class="lang-switch" role="group" data-i18n-attrs='{"aria-label":"lang.switchLabel"}' aria-label="Selector de idioma">
-        <button type="button" class="lang-switch__btn is-active" data-lang="en">EN</button>
-        <button type="button" class="lang-switch__btn" data-lang="es">ES</button>
-      </div>
-
-      <a href="https://destilatech-webapp.web.app" class="btn btn--primary nav__cta" data-cta="header" data-i18n="cta.subscribe">Subscribe</a>
-    </nav>
-
-    <button class="hamburger" id="hamburger" data-i18n-attrs='{"aria-label":"nav.toggleLabel"}' aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
+<div id="header-placeholder"></div>
 
 <main>
 
-  <section class="section hero" id="descripcion">
+  <section class="section hero" id="overview">
     <div class="container hero__inner">
       <div class="hero__content">
         <span class="eyebrow" data-i18n="hero.eyebrow">SaaS platform for the pisco ecosystem</span>
@@ -63,12 +24,12 @@
         <p class="hero__lead" data-i18n="hero.lead">Destilatech centralizes production monitoring, batch traceability, inventory management, and commercial operations across the Peruvian pisco ecosystem, with predictive analytics that help you decide when to restock before running out.</p>
         <div class="hero__actions">
           <a href="https://destilatech-webapp.web.app" class="btn btn--primary btn--lg" data-cta="hero" data-i18n="cta.subscribe">Subscribe</a>
-          <a href="#funcionalidades" class="btn btn--ghost btn--lg" data-i18n="hero.ctaSecondary">See features</a>
+          <a href="#features" class="btn btn--ghost btn--lg" data-i18n="hero.ctaSecondary">See features</a>
         </div>
         <p class="hero__note" data-i18n="hero.note">Choose your plan and get started today. Cancel anytime.</p>
       </div>
       <div class="hero__visual">
-        <img class="hero__photo" src="assets/img/hero-alambiques-v2.jpg" data-i18n-attrs='{"alt":"hero.photoAlt"}' alt="Alambiques de cobre en una destilería de pisco" width="1600" height="1066" loading="eager">
+        <img class="hero__photo" src="assets/images/hero-copper-stills.jpg" data-i18n-attrs='{"alt":"hero.photoAlt"}' alt="Alambiques de cobre en una destilería de pisco" width="1600" height="1066" loading="eager">
         <div class="hero__card hero__card--1" aria-hidden="true">
           <span class="hero__card-label" data-i18n="hero.card1.label">Tank A · Fermentation</span>
           <span class="hero__card-value">18.4°C</span>
@@ -82,37 +43,37 @@
       </div>
     </div>
 
-    <div class="segments container" id="segmentos">
+    <div class="segments container" id="segments">
       <div class="segment-card">
         <div class="segment-card__media">
-          <img src="assets/img/segmento-productor-v2.jpg" data-i18n-attrs='{"alt":"segProd.imgAlt"}' alt="Alambique de cobre usado en la producción artesanal de pisco" width="900" height="600" loading="lazy" style="object-position: 15% 50%;">
+          <img src="assets/images/segment-producer.jpg" data-i18n-attrs='{"alt":"segProducer.imgAlt"}' alt="Alambique de cobre usado en la producción artesanal de pisco" width="900" height="600" loading="lazy" style="object-position: 15% 50%;">
         </div>
-        <span class="segment-card__tag" data-i18n="segProd.tag">Pisco producer</span>
-        <h2 data-i18n="segProd.title">For producing wineries</h2>
-        <p data-i18n="segProd.desc">Monitor production conditions in real time, keep full traceability of every batch, and control your supplies and finished-goods inventory without relying on notebooks or loose sheets.</p>
+        <span class="segment-card__tag" data-i18n="segProducer.tag">Pisco producer</span>
+        <h2 data-i18n="segProducer.title">For producing wineries</h2>
+        <p data-i18n="segProducer.desc">Monitor production conditions in real time, keep full traceability of every batch, and control your supplies and finished-goods inventory without relying on notebooks or loose sheets.</p>
         <ul class="segment-card__list">
-          <li data-i18n="segProd.li1">Production variable monitoring (IoT)</li>
-          <li data-i18n="segProd.li2">End-to-end batch traceability</li>
-          <li data-i18n="segProd.li3">Supplies and stock inventory control</li>
+          <li data-i18n="segProducer.li1">Production variable monitoring (IoT)</li>
+          <li data-i18n="segProducer.li2">End-to-end batch traceability</li>
+          <li data-i18n="segProducer.li3">Supplies and stock inventory control</li>
         </ul>
       </div>
       <div class="segment-card segment-card--alt">
         <div class="segment-card__media">
-          <img src="assets/img/segmento-comercializador.jpg" data-i18n-attrs='{"alt":"segCom.imgAlt"}' alt="Estante de licorería con botellas de licor exhibidas" width="900" height="600" loading="lazy">
+          <img src="assets/images/segment-retailer.jpg" data-i18n-attrs='{"alt":"segRetailer.imgAlt"}' alt="Estante de licorería con botellas de licor exhibidas" width="900" height="600" loading="lazy">
         </div>
-        <span class="segment-card__tag" data-i18n="segCom.tag">Retailer</span>
-        <h2 data-i18n="segCom.title">For liquor stores and distributors</h2>
-        <p data-i18n="segCom.desc">Replace the notebook or spreadsheet with simple inventory control from your phone, with alerts before a product runs out and faster order management.</p>
+        <span class="segment-card__tag" data-i18n="segRetailer.tag">Retailer</span>
+        <h2 data-i18n="segRetailer.title">For liquor stores and distributors</h2>
+        <p data-i18n="segRetailer.desc">Replace the notebook or spreadsheet with simple inventory control from your phone, with alerts before a product runs out and faster order management.</p>
         <ul class="segment-card__list">
-          <li data-i18n="segCom.li1">Simple inventory, built for mobile</li>
-          <li data-i18n="segCom.li2">Automatic restock alerts</li>
-          <li data-i18n="segCom.li3">Supplier order management</li>
+          <li data-i18n="segRetailer.li1">Simple inventory, built for mobile</li>
+          <li data-i18n="segRetailer.li2">Automatic restock alerts</li>
+          <li data-i18n="segRetailer.li3">Supplier order management</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="section goals" id="objetivos">
+  <section class="section goals" id="benefits">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow" data-i18n="goals.eyebrow">Platform goals</span>
@@ -156,7 +117,7 @@
     </div>
   </section>
 
-  <section class="section pricing" id="precios">
+  <section class="section pricing" id="pricing">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow" data-i18n="pricing.eyebrow">Subscription plans</span>
@@ -206,7 +167,7 @@
     </div>
   </section>
 
-  <section class="section impact impact--photo" id="impacto">
+  <section class="section impact impact--photo" id="impact">
     <div class="container">
       <div class="section__head section__head--light">
         <span class="eyebrow eyebrow--light" data-i18n="impact.eyebrow">Industry impact</span>
@@ -228,7 +189,7 @@
     </div>
   </section>
 
-  <section class="section features" id="funcionalidades">
+  <section class="section features" id="features">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow" data-i18n="features.eyebrow">Platform features</span>
@@ -238,11 +199,11 @@
 
       <div class="tabs" id="tabs">
         <div class="tabs__buttons" role="tablist" data-i18n-attrs='{"aria-label":"features.tablistLabel"}' aria-label="Funcionalidades por perfil">
-          <button class="tabs__btn is-active" role="tab" aria-selected="true" aria-controls="panel-productor" id="tab-productor" data-tab="productor" data-i18n="features.tabProductor">Producer</button>
-          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-comercializador" id="tab-comercializador" data-tab="comercializador" data-i18n="features.tabComercializador">Retailer</button>
+          <button class="tabs__btn is-active" role="tab" aria-selected="true" aria-controls="panel-producer" id="tab-producer" data-tab="producer" data-i18n="features.tabProducer">Producer</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-retailer" id="tab-retailer" data-tab="retailer" data-i18n="features.tabRetailer">Retailer</button>
         </div>
 
-        <div class="tabs__panel is-active" id="panel-productor" role="tabpanel" aria-labelledby="tab-productor" data-panel="productor">
+        <div class="tabs__panel is-active" id="panel-producer" role="tabpanel" aria-labelledby="tab-producer" data-panel="producer">
           <div class="feature-grid">
             <div class="feature-item">
               <h3 data-i18n="features.prod1.title">IoT production monitoring</h3>
@@ -259,7 +220,7 @@
           </div>
         </div>
 
-        <div class="tabs__panel" id="panel-comercializador" role="tabpanel" aria-labelledby="tab-comercializador" data-panel="comercializador" hidden>
+        <div class="tabs__panel" id="panel-retailer" role="tabpanel" aria-labelledby="tab-retailer" data-panel="retailer" hidden>
           <div class="feature-grid">
             <div class="feature-item">
               <h3 data-i18n="features.com1.title">Simple mobile inventory</h3>
@@ -279,7 +240,7 @@
     </div>
   </section>
 
-  <section class="section product-video" id="video">
+  <section class="section product-video" id="about-the-product">
     <div class="container">
       <div class="section__head section__head--center section__head--light">
         <span class="eyebrow eyebrow--light" data-i18n="productVideo.eyebrow">About the product</span>
@@ -297,7 +258,7 @@
     </div>
   </section>
 
-  <section class="section testimonials" id="testimonios">
+  <section class="section testimonials" id="testimonials">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow" data-i18n="testimonials.eyebrow">Testimonials</span>
@@ -345,7 +306,7 @@
     </div>
   </section>
 
-  <section class="section about" id="nosotros">
+  <section class="section about" id="about-us">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow" data-i18n="about.eyebrow">About us</span>
@@ -356,7 +317,7 @@
       <div class="team__grid">
         <figure class="team-card">
           <div class="team-card__photo" data-initials="MF">
-            <img src="assets/img/team/mario-fernandez.png" alt="Mario Alonso Fernández Seer" width="400" height="400">
+            <img src="assets/images/team/mario-fernandez.png" alt="Mario Alonso Fernández Seer" width="400" height="400">
           </div>
           <figcaption>
             <strong class="team-card__name">Mario Alonso Fernández Seer</strong>
@@ -365,7 +326,7 @@
         </figure>
         <figure class="team-card">
           <div class="team-card__photo" data-initials="JS">
-            <img src="assets/img/team/jairo-santiago.png" alt="Jairo Mathias Santiago Atanacio" width="400" height="400">
+            <img src="assets/images/team/jairo-santiago.png" alt="Jairo Mathias Santiago Atanacio" width="400" height="400">
           </div>
           <figcaption>
             <strong class="team-card__name">Jairo Mathias Santiago Atanacio</strong>
@@ -374,7 +335,7 @@
         </figure>
         <figure class="team-card">
           <div class="team-card__photo" data-initials="PA">
-            <img src="assets/img/team/pierina-almandroz.jpg" alt="Pierina Marysabel Almandroz Carbajal" width="400" height="400">
+            <img src="assets/images/team/pierina-almandroz.jpg" alt="Pierina Marysabel Almandroz Carbajal" width="400" height="400">
           </div>
           <figcaption>
             <strong class="team-card__name">Pierina Marysabel Almandroz Carbajal</strong>
@@ -383,7 +344,7 @@
         </figure>
         <figure class="team-card">
           <div class="team-card__photo" data-initials="JC">
-            <img src="assets/img/team/jean-pierre.jpeg" alt="Jean Pierre Cóndor Sandoval" width="400" height="400">
+            <img src="assets/images/team/jean-pierre-condor.jpeg" alt="Jean Pierre Cóndor Sandoval" width="400" height="400">
           </div>
           <figcaption>
             <strong class="team-card__name">Jean Pierre Cóndor Sandoval</strong>
@@ -415,55 +376,9 @@
 
 </main>
 
-<footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <a href="#header" class="logo logo--footer" data-i18n-attrs='{"aria-label":"logo.ariaLabel"}' aria-label="Destilatech - inicio">
-        <span class="logo__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.5 3.2h15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M4.5 3.2c0 5.4 3.3 9.7 7.5 9.7s7.5-4.3 7.5-9.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12 12.9v6.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M8.3 20.5h7.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="16.3" cy="4.6" r="1.15" style="fill: var(--color-accent)"/>
-          </svg>
-        </span>
-        <span class="logo__text">Destila<strong>tech</strong></span>
-      </a>
-      <p data-i18n="footer.brandDesc">Smart management for the Peruvian pisco ecosystem. A FuturosSeniors project.</p>
-    </div>
+<div id="footer-placeholder"></div>
 
-    <div class="footer__col">
-      <h3 data-i18n="footer.navTitle">Navigation</h3>
-      <ul>
-        <li><a href="#descripcion" data-i18n="nav.description">Overview</a></li>
-        <li><a href="#objetivos" data-i18n="nav.goals">Benefits</a></li>
-        <li><a href="#precios" data-i18n="nav.pricing">Pricing</a></li>
-        <li><a href="#impacto" data-i18n="nav.impact">Impact</a></li>
-        <li><a href="#funcionalidades" data-i18n="nav.features">Features</a></li>
-        <li><a href="#testimonios" data-i18n="nav.testimonials">Testimonials</a></li>
-        <li><a href="#video" data-i18n="nav.productVideo">About the product</a></li>
-        <li><a href="#nosotros" data-i18n="nav.about">About us</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__col">
-      <h3 data-i18n="footer.legalTitle">Legal</h3>
-      <ul>
-        <li><a href="terms.html" data-i18n="footer.termsLink">Terms and conditions</a></li>
-        <li><a href="privacy.html" data-i18n="footer.privacyLink">Privacy policy</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="footer__bottom container">
-    <p>&copy; <span id="year"></span> <span data-i18n="footer.copyright">Destilatech · FuturosSeniors. All rights reserved.</span></p>
-    <a href="https://destilatech-webapp.web.app" class="btn btn--primary btn--sm" data-cta="footer" data-i18n="cta.subscribe">Subscribe</a>
-  </div>
-</footer>
-
-<script src="js/i18n.js"></script>
-<script src="js/script.js"></script>
+<script src="assets/scripts/i18n.js"></script>
+<script src="assets/scripts/main.js"></script>
 </body>
 </html>
