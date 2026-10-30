@@ -1,5 +1,31 @@
+// Partials: the header and footer live in _header.html and _footer.html and are injected
+// into every page, so they are written only once.
+const PARTIALS = [
+  { placeholderId: 'header-placeholder', url: '_header.html' },
+  { placeholderId: 'footer-placeholder', url: '_footer.html' }
+];
 
-document.addEventListener('DOMContentLoaded', () => {
+const loadPartial = async ({ placeholderId, url }) => {
+  const placeholder = document.getElementById(placeholderId);
+  if (!placeholder) return;
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Could not load ${url} (${response.status})`);
+  placeholder.outerHTML = await response.text();
+};
+
+// Normalizes a path so "/site/" and "/site/index.html" are treated as the same page.
+const pagePath = (pathname) => pathname.replace(/index\.html$/, '');
+
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    await Promise.all(PARTIALS.map(loadPartial));
+  } catch (error) {
+    console.error(error);
+  }
+  document.dispatchEvent(new Event('partials:loaded'));
+});
+
+document.addEventListener('partials:loaded', () => {
   const hamburger = document.getElementById('hamburger');
   const nav = document.getElementById('nav');
 
@@ -29,14 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  // Section links ("index.html#pricing") scroll smoothly when the section is on the current page;
+  // from the legal pages they simply open the landing page at that section.
+  document.querySelectorAll('a[href*="#"]').forEach((link) => {
     link.addEventListener('click', (event) => {
-      const targetId = link.getAttribute('href');
-      const target = document.querySelector(targetId);
+      const url = new URL(link.href);
+      if (pagePath(url.pathname) !== pagePath(window.location.pathname) || !url.hash) return;
+      const target = document.querySelector(url.hash);
       if (!target) return;
       event.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      history.pushState(null, '', targetId);
+      history.pushState(null, '', url.hash);
     });
   });
 
@@ -82,4 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Coming from another page (e.g. terms.html -> index.html#pricing): the header was injected after
+  // the browser tried to scroll, so scroll to the requested section again.
+  const initialTarget = window.location.hash ? document.querySelector(window.location.hash) : null;
+  if (initialTarget) initialTarget.scrollIntoView({ block: 'start', behavior: 'instant' });
 });
