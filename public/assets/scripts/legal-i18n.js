@@ -1,5 +1,4 @@
 Object.assign(translations.es, {
-    "legal.back": "Volver al inicio",
     "legal.updated": "Última actualización: octubre de 2026",
 
     "terms.metaTitle": "Términos y condiciones — Destilatech",
@@ -50,7 +49,6 @@ Object.assign(translations.es, {
 });
 
 Object.assign(translations.en, {
-    "legal.back": "Back to home",
     "legal.updated": "Last updated: October 2026",
 
     "terms.metaTitle": "Terms and conditions — Destilatech",
