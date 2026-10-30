@@ -27,21 +27,21 @@ const translations = {
         "hero.card2.value": "42 uds.",
         "hero.card2.status": "Reponer pronto",
 
-        "segProd.imgAlt": "Alambique de cobre usado en la producción artesanal de pisco",
-        "segProd.tag": "Productor de pisco",
-        "segProd.title": "Para bodegas productoras",
-        "segProd.desc": "Supervisa condiciones de elaboración en tiempo real, mantén trazabilidad completa de cada lote y controla tu inventario de insumos y producto terminado sin depender de cuadernos ni hojas sueltas.",
-        "segProd.li1": "Monitoreo de variables de producción (IoT)",
-        "segProd.li2": "Trazabilidad de lotes de principio a fin",
-        "segProd.li3": "Control de inventario de insumos y stock",
+        "segProducer.imgAlt": "Alambique de cobre usado en la producción artesanal de pisco",
+        "segProducer.tag": "Productor de pisco",
+        "segProducer.title": "Para bodegas productoras",
+        "segProducer.desc": "Supervisa condiciones de elaboración en tiempo real, mantén trazabilidad completa de cada lote y controla tu inventario de insumos y producto terminado sin depender de cuadernos ni hojas sueltas.",
+        "segProducer.li1": "Monitoreo de variables de producción (IoT)",
+        "segProducer.li2": "Trazabilidad de lotes de principio a fin",
+        "segProducer.li3": "Control de inventario de insumos y stock",
 
-        "segCom.imgAlt": "Estante de licorería con botellas de licor exhibidas",
-        "segCom.tag": "Comercializador",
-        "segCom.title": "Para licorerías y distribuidores",
-        "segCom.desc": "Reemplaza el cuaderno o el Excel por un control de inventario simple desde el celular, con alertas antes de que un producto se agote y una gestión de pedidos más ágil.",
-        "segCom.li1": "Inventario simple, pensado para el celular",
-        "segCom.li2": "Alertas automáticas de reposición",
-        "segCom.li3": "Gestión de pedidos a proveedores",
+        "segRetailer.imgAlt": "Estante de licorería con botellas de licor exhibidas",
+        "segRetailer.tag": "Comercializador",
+        "segRetailer.title": "Para licorerías y distribuidores",
+        "segRetailer.desc": "Reemplaza el cuaderno o el Excel por un control de inventario simple desde el celular, con alertas antes de que un producto se agote y una gestión de pedidos más ágil.",
+        "segRetailer.li1": "Inventario simple, pensado para el celular",
+        "segRetailer.li2": "Alertas automáticas de reposición",
+        "segRetailer.li3": "Gestión de pedidos a proveedores",
 
         "goals.eyebrow": "Objetivos de la plataforma",
         "goals.title": "Beneficios pensados para tu operación diaria",
@@ -89,8 +89,8 @@ const translations = {
         "features.title": "Una plataforma, dos formas de trabajar",
         "features.lead": "Elige tu perfil para ver las funcionalidades pensadas para ti.",
         "features.tablistLabel": "Funcionalidades por perfil",
-        "features.tabProductor": "Productor",
-        "features.tabComercializador": "Comercializador",
+        "features.tabProducer": "Productor",
+        "features.tabRetailer": "Comercializador",
         "features.prod1.title": "Monitoreo IoT de producción",
         "features.prod1.desc": "Sensores simulados registran temperatura, humedad y otras variables clave del proceso de destilación en tiempo real.",
         "features.prod2.title": "Trazabilidad de lotes",
@@ -169,21 +169,21 @@ const translations = {
         "hero.card2.value": "42 units",
         "hero.card2.status": "Restock soon",
 
-        "segProd.imgAlt": "Copper still used in artisanal pisco production",
-        "segProd.tag": "Pisco producer",
-        "segProd.title": "For producing wineries",
-        "segProd.desc": "Monitor production conditions in real time, keep full traceability of every batch, and control your supplies and finished-goods inventory without relying on notebooks or loose sheets.",
-        "segProd.li1": "Production variable monitoring (IoT)",
-        "segProd.li2": "End-to-end batch traceability",
-        "segProd.li3": "Supplies and stock inventory control",
+        "segProducer.imgAlt": "Copper still used in artisanal pisco production",
+        "segProducer.tag": "Pisco producer",
+        "segProducer.title": "For producing wineries",
+        "segProducer.desc": "Monitor production conditions in real time, keep full traceability of every batch, and control your supplies and finished-goods inventory without relying on notebooks or loose sheets.",
+        "segProducer.li1": "Production variable monitoring (IoT)",
+        "segProducer.li2": "End-to-end batch traceability",
+        "segProducer.li3": "Supplies and stock inventory control",
 
-        "segCom.imgAlt": "Liquor store shelf with bottles on display",
-        "segCom.tag": "Retailer",
-        "segCom.title": "For liquor stores and distributors",
-        "segCom.desc": "Replace the notebook or spreadsheet with simple inventory control from your phone, with alerts before a product runs out and faster order management.",
-        "segCom.li1": "Simple inventory, built for mobile",
-        "segCom.li2": "Automatic restock alerts",
-        "segCom.li3": "Supplier order management",
+        "segRetailer.imgAlt": "Liquor store shelf with bottles on display",
+        "segRetailer.tag": "Retailer",
+        "segRetailer.title": "For liquor stores and distributors",
+        "segRetailer.desc": "Replace the notebook or spreadsheet with simple inventory control from your phone, with alerts before a product runs out and faster order management.",
+        "segRetailer.li1": "Simple inventory, built for mobile",
+        "segRetailer.li2": "Automatic restock alerts",
+        "segRetailer.li3": "Supplier order management",
 
         "goals.eyebrow": "Platform goals",
         "goals.title": "Benefits built for your daily operation",
@@ -231,8 +231,8 @@ const translations = {
         "features.title": "One platform, two ways to work",
         "features.lead": "Choose your profile to see the features built for you.",
         "features.tablistLabel": "Features by profile",
-        "features.tabProductor": "Producer",
-        "features.tabComercializador": "Retailer",
+        "features.tabProducer": "Producer",
+        "features.tabRetailer": "Retailer",
         "features.prod1.title": "IoT production monitoring",
         "features.prod1.desc": "Simulated sensors record temperature, humidity, and other key distillation variables in real time.",
         "features.prod2.title": "Batch traceability",
@@ -330,7 +330,8 @@ function applyLanguage(lang) {
     } catch (e) {}
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// Runs once the header and footer partials are in the page (see main.js).
+document.addEventListener("partials:loaded", () => {
     const initialLang = getStoredLang() || DEFAULT_LANG;
     applyLanguage(initialLang);
 
