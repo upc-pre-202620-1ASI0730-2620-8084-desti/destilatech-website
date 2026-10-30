@@ -417,7 +417,7 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 }
 .impact--photo {
   position: relative;
-  background-image: linear-gradient(135deg, rgba(58, 27, 20, 0.88), rgba(122, 59, 46, 0.82)), url("../assets/img/impacto-vinedo.jpg");
+  background-image: linear-gradient(135deg, rgba(58, 27, 20, 0.88), rgba(122, 59, 46, 0.82)), url("../images/impact-vineyard.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -621,8 +621,6 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 .cta-final h2 { max-width: 32ch; }
 .cta-final p { margin-bottom: 20px; }
 
-.legal-header__actions { display: flex; align-items: center; gap: 12px; }
-
 .legal__inner { max-width: 820px; }
 .legal__updated { font-size: 0.85rem; margin-bottom: 20px; }
 .legal__section { padding-top: 28px; border-top: 1px solid var(--color-border); margin-top: 28px; }
@@ -630,12 +628,7 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 .legal__body { color: var(--color-text-muted); }
 .legal__body ul { list-style: disc; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
 .legal__body a { color: var(--color-primary); text-decoration: underline; }
-.legal + .footer { padding-top: 0; }
-.legal__links { margin: 0; }
 
-@media (max-width: 479.98px) {
-  .legal-page .logo__text { display: none; }
-}
 
 .footer {
   background: #241a16;
