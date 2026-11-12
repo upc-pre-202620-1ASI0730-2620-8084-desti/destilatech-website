@@ -33,7 +33,7 @@ Curso: Aplicaciones Web (1ASI0730) — UPC, ciclo 2026-20.
 | Features | `#features` | Funcionalidades en pestañas por perfil: Productor / Comercializador. |
 | About the product | `#about-the-product` | Video de presentación del producto. |
 | Testimonials | `#testimonials` | Testimonios ilustrativos de clientes. |
-| About us | `#about-us` | Equipo FuturosSeniors con fotos y video de presentación del equipo. |
+| About the Team | `#about-the-team` | Equipo FuturosSeniors con fotos y video de presentación del equipo. |
 | Footer | — (`_footer.html`) | Navegación, enlaces legales y botón **Subscribe**. |
 
 Páginas adicionales:
@@ -109,14 +109,14 @@ Para agregar un texto nuevo, crea la misma clave en `es` y en `en`, y úsala en 
 ## Equipo y videos
 
 - **Fotos:** van en `public/assets/images/team/`. Si una foto no carga, la tarjeta muestra las iniciales del integrante.
-- **Videos:** la landing tiene dos espacios para video. Cuando estén grabados, súbelos a YouTube y pega el ID de cada
-  uno (lo que va después de `watch?v=`) en el atributo `data-video-id` de su elemento en `public/index.html`. El video
-  se inserta solo; mientras el atributo esté vacío se muestra el aviso *coming soon*.
+- **Videos:** los dos videos están publicados en YouTube y se insertan solos a partir del ID (lo que va después de
+  `youtu.be/` o de `watch?v=`) del atributo `data-video-id` de su elemento en `public/index.html`. Para cambiar un
+  video, reemplaza ese ID; si el atributo queda vacío, se muestra el aviso *coming soon*.
 
-| Video | Elemento en `public/index.html` |
-| :--- | :--- |
-| Video about the product | `<div class="video-frame" id="product-video" data-video-id="" ...>` |
-| Video about the team | `<div class="video-frame" id="team-video" data-video-id="" ...>` |
+| Video | Elemento en `public/index.html` | YouTube |
+| :--- | :--- | :--- |
+| Video about the product | `<div class="video-frame" id="product-video" data-video-id="5oqDkvLjRj4" ...>` | https://youtu.be/5oqDkvLjRj4 |
+| Video about the team | `<div class="video-frame" id="team-video" data-video-id="unnZ-w0I7SU" ...>` | https://youtu.be/unnZ-w0I7SU |
 
 ## Ejecución local
 
