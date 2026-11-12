@@ -11,7 +11,7 @@ const translations = {
         "nav.impact": "Impacto",
         "nav.features": "Funcionalidades",
         "nav.testimonials": "Testimonios",
-        "nav.about": "Nosotros",
+        "nav.about": "Sobre el equipo",
         "cta.subscribe": "Suscríbete",
         "lang.switchLabel": "Selector de idioma",
 
@@ -116,7 +116,7 @@ const translations = {
         "testimonials.t3.role": "Distribuidora · Arequipa",
         "testimonials.note": "Testimonios ilustrativos, basados en las necesidades identificadas en nuestras entrevistas a productores y comercializadores.",
 
-        "about.eyebrow": "Acerca de nosotros",
+        "about.eyebrow": "Sobre el equipo",
         "about.title": "Somos FuturosSeniors",
         "about.lead": "Un equipo de cuatro estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Creamos Destilatech para centralizar la información de producción, inventario y comercialización del pisco, y facilitar la supervisión y la toma de decisiones de productores y comercializadores.",
         "about.role": "Ingeniería de Software · UPC",
@@ -153,7 +153,7 @@ const translations = {
         "nav.impact": "Impact",
         "nav.features": "Features",
         "nav.testimonials": "Testimonials",
-        "nav.about": "About us",
+        "nav.about": "About the Team",
         "cta.subscribe": "Subscribe",
         "lang.switchLabel": "Language selector",
 
@@ -258,7 +258,7 @@ const translations = {
         "testimonials.t3.role": "Distributor · Arequipa",
         "testimonials.note": "Illustrative testimonials based on the needs identified in our interviews with producers and retailers.",
 
-        "about.eyebrow": "About us",
+        "about.eyebrow": "About the Team",
         "about.title": "We are FuturosSeniors",
         "about.lead": "A team of four Software Engineering students at Universidad Peruana de Ciencias Aplicadas (UPC). We built Destilatech to centralize pisco production, inventory and sales information, making supervision and decision-making easier for producers and retailers.",
         "about.role": "Software Engineering · UPC",
