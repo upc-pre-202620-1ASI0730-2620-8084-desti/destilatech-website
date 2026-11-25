@@ -23,7 +23,8 @@
         <h1 data-i18n="hero.title">Monitor, control, and anticipate your pisco production and inventory from one place</h1>
         <p class="hero__lead" data-i18n="hero.lead">Destilatech centralizes production monitoring, batch traceability, inventory management, and commercial operations across the Peruvian pisco ecosystem, with predictive analytics that help you decide when to restock before running out.</p>
         <div class="hero__actions">
-          <a href="https://destilatech-webapp.web.app" class="btn btn--primary btn--lg" data-cta="hero" data-i18n="cta.subscribe">Subscribe</a>
+          <a href="https://destilatech-webapp.web.app/register" class="btn btn--primary btn--lg" data-cta="hero" data-i18n="cta.freeTrial">Start your 14-day free trial</a>
+          <a href="https://destilatech-webapp.web.app/billing/plans" class="btn btn--outline btn--lg" data-cta="hero-subscribe" data-i18n="cta.subscribe">Subscribe</a>
           <a href="#features" class="btn btn--ghost btn--lg" data-i18n="hero.ctaSecondary">See features</a>
         </div>
         <p class="hero__note" data-i18n="hero.note">Choose your plan and get started today. Cancel anytime.</p>
@@ -56,6 +57,7 @@
           <li data-i18n="segProducer.li2">End-to-end batch traceability</li>
           <li data-i18n="segProducer.li3">Supplies and stock inventory control</li>
         </ul>
+        <a href="https://destilatech-webapp.web.app/register?type=producer" class="btn btn--primary segment-card__cta" data-cta="segment-producer" data-i18n="segProducer.cta">Free trial for your winery</a>
       </div>
       <div class="segment-card segment-card--alt">
         <div class="segment-card__media">
@@ -69,6 +71,7 @@
           <li data-i18n="segRetailer.li2">Automatic restock alerts</li>
           <li data-i18n="segRetailer.li3">Supplier order management</li>
         </ul>
+        <a href="https://destilatech-webapp.web.app/register?type=retailer" class="btn btn--primary segment-card__cta" data-cta="segment-retailer" data-i18n="segRetailer.cta">Free trial for your store</a>
       </div>
     </div>
   </section>
@@ -123,6 +126,7 @@
         <span class="eyebrow" data-i18n="pricing.eyebrow">Subscription plans</span>
         <h2 data-i18n="pricing.title">Choose the right plan for your operation</h2>
         <p class="section__lead" data-i18n="pricing.lead">Monthly plans, <strong>no long-term contracts</strong>. Cancel anytime.</p>
+        <p class="pricing__trial-note" data-i18n="pricing.trialNote">All plans include a <strong>14-day free trial</strong>. No card required.</p>
       </div>
 
       <div class="pricing__grid">
@@ -135,7 +139,9 @@
             <li data-i18n="pricing.basic.li2">Stock alerts</li>
             <li data-i18n="pricing.basic.li3">1 user</li>
           </ul>
-          <a href="https://destilatech-webapp.web.app/billing/plans?plan=basic" class="btn btn--outline" data-cta="pricing-basico" data-i18n="cta.subscribe">Subscribe</a>
+          <p class="price-card__trial" data-i18n="pricing.trialIncluded">Includes a 14-day free trial</p>
+          <a href="https://destilatech-webapp.web.app/register?plan=basic" class="btn btn--outline" data-cta="pricing-basico" data-i18n="pricing.cta">Start free trial</a>
+          <a href="https://destilatech-webapp.web.app/billing/plans?plan=basic" class="btn btn--ghost price-card__subscribe" data-cta="pricing-basico-subscribe" data-i18n="cta.subscribe">Subscribe</a>
         </article>
 
         <article class="price-card price-card--featured">
@@ -149,7 +155,9 @@
             <li data-i18n="pricing.pro.li3">Predictive estimates</li>
             <li data-i18n="pricing.pro.li4">Up to 5 users</li>
           </ul>
-          <a href="https://destilatech-webapp.web.app/billing/plans?plan=professional" class="btn btn--primary" data-cta="pricing-profesional" data-i18n="cta.subscribe">Subscribe</a>
+          <p class="price-card__trial" data-i18n="pricing.trialIncluded">Includes a 14-day free trial</p>
+          <a href="https://destilatech-webapp.web.app/register?plan=professional" class="btn btn--primary" data-cta="pricing-profesional" data-i18n="pricing.cta">Start free trial</a>
+          <a href="https://destilatech-webapp.web.app/billing/plans?plan=professional" class="btn btn--ghost price-card__subscribe" data-cta="pricing-profesional-subscribe" data-i18n="cta.subscribe">Subscribe</a>
         </article>
 
         <article class="price-card">
@@ -161,7 +169,9 @@
             <li data-i18n="pricing.ent.li2">Unlimited users</li>
             <li data-i18n="pricing.ent.li3">Priority support</li>
           </ul>
-          <a href="https://destilatech-webapp.web.app/billing/plans?plan=enterprise" class="btn btn--outline" data-cta="pricing-empresarial" data-i18n="cta.subscribe">Subscribe</a>
+          <p class="price-card__trial" data-i18n="pricing.trialIncluded">Includes a 14-day free trial</p>
+          <a href="https://destilatech-webapp.web.app/register?plan=enterprise" class="btn btn--outline" data-cta="pricing-empresarial" data-i18n="pricing.cta">Start free trial</a>
+          <a href="https://destilatech-webapp.web.app/billing/plans?plan=enterprise" class="btn btn--ghost price-card__subscribe" data-cta="pricing-empresarial-subscribe" data-i18n="cta.subscribe">Subscribe</a>
         </article>
       </div>
     </div>
@@ -368,7 +378,10 @@
     <div class="container cta-final__inner">
       <h2 data-i18n="ctaFinal.title">Start managing your production and inventory today</h2>
       <p data-i18n="ctaFinal.desc">Subscribe and take control of your operation from day one.</p>
-      <a href="https://destilatech-webapp.web.app" class="btn btn--primary btn--lg" data-cta="cta-final" data-i18n="cta.subscribe">Subscribe</a>
+      <div class="cta-final__actions">
+        <a href="https://destilatech-webapp.web.app/register" class="btn btn--primary btn--lg" data-cta="cta-final" data-i18n="cta.freeTrial">Start your 14-day free trial</a>
+        <a href="https://destilatech-webapp.web.app/billing/plans" class="btn btn--outline btn--lg" data-cta="cta-final-subscribe" data-i18n="cta.subscribe">Subscribe</a>
+      </div>
     </div>
   </section>
 
