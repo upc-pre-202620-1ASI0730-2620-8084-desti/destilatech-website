@@ -25,16 +25,16 @@ Curso: Aplicaciones Web (1ASI0730) — UPC, ciclo 2026-20.
 
 | Sección | Ancla | Contenido |
 | :--- | :--- | :--- |
-| Header | — (`_header.html`) | Logo, navegación con *scroll* suave, selector de idioma y botón **Subscribe**. |
-| Overview | `#overview` | Propuesta de valor y tarjetas por segmento (productor y comercializador). |
+| Header | — (`_header.html`) | Logo, navegación con *scroll* suave, selector de idioma y botón **Free trial**. |
+| Overview | `#overview` | Propuesta de valor y tarjetas por segmento (productor y comercializador), cada una con su botón de prueba gratis. |
 | Benefits | `#benefits` | Cuatro beneficios: monitoreo, inventario, alertas y estimaciones predictivas. |
-| Pricing | `#pricing` | Planes Básico, Profesional y Empresarial, cada uno con su botón de suscripción. |
+| Pricing | `#pricing` | Planes Básico, Profesional y Empresarial; todos incluyen 14 días de prueba gratis. Cada plan tiene **Start free trial** y **Subscribe**. |
 | Impact | `#impact` | Cifras del sector pisquero (Ministerio de la Producción, 2025). |
 | Features | `#features` | Funcionalidades en pestañas por perfil: Productor / Comercializador. |
 | About the product | `#about-the-product` | Video de presentación del producto. |
 | Testimonials | `#testimonials` | Testimonios ilustrativos de clientes. |
 | About the Team | `#about-the-team` | Equipo FuturosSeniors con fotos y video de presentación del equipo. |
-| Footer | — (`_footer.html`) | Navegación, enlaces legales y botón **Subscribe**. |
+| Footer | — (`_footer.html`) | Navegación, enlaces legales y botones **Free trial** y **Subscribe**. |
 
 Páginas adicionales:
 
@@ -43,14 +43,24 @@ Páginas adicionales:
 
 ## Llamadas a la acción
 
-Todos los botones **Subscribe** llevan a la Web Application:
+Hay dos tipos de botón hacia la Web Application:
 
-| Botón | Destino |
-| :--- | :--- |
-| Header, Overview, bloque final y Footer | `https://destilatech-webapp.web.app` |
-| Plan Básico | `https://destilatech-webapp.web.app/billing/plans?plan=basic` |
-| Plan Profesional | `https://destilatech-webapp.web.app/billing/plans?plan=professional` |
-| Plan Empresarial | `https://destilatech-webapp.web.app/billing/plans?plan=enterprise` |
+- **Prueba gratis**: lleva al registro, donde empieza la prueba gratuita de 14 días (US22, US23).
+- **Subscribe**: lleva a la pantalla de planes (Stripe Checkout). Si la persona no ha iniciado sesión, la app le pide
+  hacerlo y luego la devuelve al plan elegido.
+
+| Botón | Texto (EN / ES) | Destino |
+| :--- | :--- | :--- |
+| Header | Free trial / Prueba gratis | `https://destilatech-webapp.web.app/register` |
+| Overview y bloque final | Start your 14-day free trial / Prueba gratis 14 días | `https://destilatech-webapp.web.app/register` |
+| Overview, bloque final y Footer | Subscribe / Suscríbete | `https://destilatech-webapp.web.app/billing/plans` |
+| Footer | Free trial / Prueba gratis | `https://destilatech-webapp.web.app/register` |
+| Segmento productor | Free trial for your winery / Prueba gratis para tu bodega | `https://destilatech-webapp.web.app/register?type=producer` |
+| Segmento comercializador | Free trial for your store / Prueba gratis para tu licorería | `https://destilatech-webapp.web.app/register?type=retailer` |
+| Cada plan: prueba gratis | Start free trial / Empezar prueba gratis | `https://destilatech-webapp.web.app/register?plan=basic`, `professional` o `enterprise` |
+| Cada plan: suscripción | Subscribe / Suscríbete | `https://destilatech-webapp.web.app/billing/plans?plan=basic`, `professional` o `enterprise` |
+
+El registro elige el tipo de negocio con `type` y guarda el plan preferido con `plan`.
 
 ## Estructura del proyecto
 
