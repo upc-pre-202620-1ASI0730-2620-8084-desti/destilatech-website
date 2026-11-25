@@ -13,13 +13,15 @@ const translations = {
         "nav.testimonials": "Testimonios",
         "nav.about": "Sobre el equipo",
         "cta.subscribe": "Suscríbete",
+        "cta.freeTrial": "Prueba gratis 14 días",
+        "cta.freeTrialShort": "Prueba gratis",
         "lang.switchLabel": "Selector de idioma",
 
         "hero.eyebrow": "Plataforma SaaS para el ecosistema del pisco",
         "hero.title": "Monitorea, controla y anticipa tu producción y tu inventario de pisco desde un solo lugar",
         "hero.lead": "Destilatech centraliza el monitoreo de producción, la trazabilidad de lotes, la gestión de inventario y las operaciones comerciales del ecosistema peruano del pisco, con análisis predictivo que te ayuda a decidir cuándo reponer antes de quedarte sin stock.",
         "hero.ctaSecondary": "Ver funcionalidades",
-        "hero.note": "Elige tu plan y empieza hoy mismo. Cancela cuando quieras.",
+        "hero.note": "14 días gratis, sin tarjeta. Luego eliges tu plan y cancelas cuando quieras.",
         "hero.photoAlt": "Alambiques de cobre en una destilería de pisco",
         "hero.card1.label": "Tanque A · Fermentación",
         "hero.card1.status": "Óptimo",
@@ -34,6 +36,7 @@ const translations = {
         "segProducer.li1": "Monitoreo de variables de producción (IoT)",
         "segProducer.li2": "Trazabilidad de lotes de principio a fin",
         "segProducer.li3": "Control de inventario de insumos y stock",
+        "segProducer.cta": "Prueba gratis para tu bodega",
 
         "segRetailer.imgAlt": "Estante de licorería con botellas de licor exhibidas",
         "segRetailer.tag": "Comercializador",
@@ -42,6 +45,7 @@ const translations = {
         "segRetailer.li1": "Inventario simple, pensado para el celular",
         "segRetailer.li2": "Alertas automáticas de reposición",
         "segRetailer.li3": "Gestión de pedidos a proveedores",
+        "segRetailer.cta": "Prueba gratis para tu licorería",
 
         "goals.eyebrow": "Objetivos de la plataforma",
         "goals.title": "Beneficios pensados para tu operación diaria",
@@ -58,6 +62,9 @@ const translations = {
         "pricing.eyebrow": "Planes de suscripción",
         "pricing.title": "Elige el plan ideal para tu operación",
         "pricing.lead": "Planes mensuales, <strong>sin contratos de permanencia</strong>. Cancela cuando quieras.",
+        "pricing.trialNote": "Todos los planes incluyen <strong>14 días de prueba gratis</strong>. Sin tarjeta.",
+        "pricing.trialIncluded": "Incluye 14 días de prueba gratis",
+        "pricing.cta": "Empezar prueba gratis",
         "pricing.basic.title": "Plan Básico",
         "pricing.basic.price": "S/ 60<span>/mes</span>",
         "pricing.basic.desc": "Ideal para bodegas o licorerías pequeñas que recién digitalizan su inventario.",
@@ -131,7 +138,7 @@ const translations = {
         "nav.productVideo": "Sobre el producto",
 
         "ctaFinal.title": "Empieza a gestionar tu producción e inventario hoy",
-        "ctaFinal.desc": "Suscríbete y toma el control de tu operación desde el primer día.",
+        "ctaFinal.desc": "Prueba Destilatech gratis durante 14 días y toma el control de tu operación desde el primer día.",
 
         "footer.brandDesc": "Gestión inteligente para el ecosistema peruano del pisco. Un proyecto de FuturosSeniors.",
         "footer.navTitle": "Navegación",
@@ -155,13 +162,15 @@ const translations = {
         "nav.testimonials": "Testimonials",
         "nav.about": "About the Team",
         "cta.subscribe": "Subscribe",
+        "cta.freeTrial": "Start your 14-day free trial",
+        "cta.freeTrialShort": "Free trial",
         "lang.switchLabel": "Language selector",
 
         "hero.eyebrow": "SaaS platform for the pisco ecosystem",
         "hero.title": "Monitor, control, and anticipate your pisco production and inventory from one place",
         "hero.lead": "Destilatech centralizes production monitoring, batch traceability, inventory management, and commercial operations across the Peruvian pisco ecosystem, with predictive analytics that help you decide when to restock before running out.",
         "hero.ctaSecondary": "See features",
-        "hero.note": "Choose your plan and get started today. Cancel anytime.",
+        "hero.note": "14 days free, no card required. Then choose your plan and cancel anytime.",
         "hero.photoAlt": "Copper stills in a pisco distillery",
         "hero.card1.label": "Tank A · Fermentation",
         "hero.card1.status": "Optimal",
@@ -176,6 +185,7 @@ const translations = {
         "segProducer.li1": "Production variable monitoring (IoT)",
         "segProducer.li2": "End-to-end batch traceability",
         "segProducer.li3": "Supplies and stock inventory control",
+        "segProducer.cta": "Free trial for your winery",
 
         "segRetailer.imgAlt": "Liquor store shelf with bottles on display",
         "segRetailer.tag": "Retailer",
@@ -184,6 +194,7 @@ const translations = {
         "segRetailer.li1": "Simple inventory, built for mobile",
         "segRetailer.li2": "Automatic restock alerts",
         "segRetailer.li3": "Supplier order management",
+        "segRetailer.cta": "Free trial for your store",
 
         "goals.eyebrow": "Platform goals",
         "goals.title": "Benefits built for your daily operation",
@@ -200,6 +211,9 @@ const translations = {
         "pricing.eyebrow": "Subscription plans",
         "pricing.title": "Choose the right plan for your operation",
         "pricing.lead": "Monthly plans, <strong>no long-term contracts</strong>. Cancel anytime.",
+        "pricing.trialNote": "All plans include a <strong>14-day free trial</strong>. No card required.",
+        "pricing.trialIncluded": "Includes a 14-day free trial",
+        "pricing.cta": "Start free trial",
         "pricing.basic.title": "Basic Plan",
         "pricing.basic.price": "S/ 60<span>/mo</span>",
         "pricing.basic.desc": "Ideal for small wineries or liquor stores just starting to digitize their inventory.",
@@ -273,7 +287,7 @@ const translations = {
         "nav.productVideo": "About the product",
 
         "ctaFinal.title": "Start managing your production and inventory today",
-        "ctaFinal.desc": "Subscribe and take control of your operation from day one.",
+        "ctaFinal.desc": "Try Destilatech free for 14 days and take control of your operation from day one.",
 
         "footer.brandDesc": "Smart management for the Peruvian pisco ecosystem. A FuturosSeniors project.",
         "footer.navTitle": "Navigation",
